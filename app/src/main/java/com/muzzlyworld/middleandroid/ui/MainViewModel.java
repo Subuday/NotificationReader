@@ -3,6 +3,7 @@ package com.muzzlyworld.middleandroid.ui;
 import android.annotation.SuppressLint;
 import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 
 import androidx.core.app.NotificationManagerCompat;
 import androidx.lifecycle.LiveData;
@@ -149,6 +150,7 @@ public final class MainViewModel extends ViewModel {
     private void startNotificationListening() {
         if (!NotificationManagerCompat.getEnabledListenerPackages(mApplicationContext).contains(mApplicationContext.getPackageName())) {
             Intent intent = new Intent("android.settings.ACTION_NOTIFICATION_LISTENER_SETTINGS");
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.P) intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             mApplicationContext.startActivity(intent);
         } else {
             Intent intent = new Intent(mApplicationContext, NotificationReaderService.class);
