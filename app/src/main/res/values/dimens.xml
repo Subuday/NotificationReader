@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_filter_with">172dp</dimen>
+    <dimen name="dialog_filter_height">200dp</dimen>
+    <dimen name="dialog_filter_margin_top">42dp</dimen>
+    <dimen name="dialog_filter_margin_start">42dp</dimen>
+</resources>

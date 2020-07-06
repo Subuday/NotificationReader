@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Platform.V23.Theme.AppTheme" parent="Platform.V21.Theme.AppTheme">
+        <item name="android:statusBarColor">#E0E0E0</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <style name="Platform.Theme.AppTheme" parent="Platform.V23.Theme.AppTheme"/>
+
+</resources>

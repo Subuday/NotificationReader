@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/dialog_filter_background">
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:checkedButton="@+id/all">
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/all"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingStart="20dp"
+            android:text="All"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp"
+            android:button="@drawable/filter_radio_button_selector"
+            app:useMaterialThemeColors="false" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/perHour"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingStart="20dp"
+            android:text="Per Hour"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp"
+            android:button="@drawable/filter_radio_button_selector"
+            app:useMaterialThemeColors="false" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/perDay"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingStart="20dp"
+            android:text="Per Day"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp"
+            android:button="@drawable/filter_radio_button_selector"
+            app:useMaterialThemeColors="false" />
+
+        <com.google.android.material.radiobutton.MaterialRadioButton
+            android:id="@+id/perMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingStart="20dp"
+            android:text="Per Month"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"
+            android:textColor="?attr/colorAccent"
+            android:textSize="16sp"
+            android:button="@drawable/filter_radio_button_selector"
+            app:useMaterialThemeColors="false" />
+
+    </RadioGroup>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
