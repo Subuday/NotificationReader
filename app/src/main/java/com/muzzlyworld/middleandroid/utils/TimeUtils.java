@@ -9,7 +9,7 @@ final public class TimeUtils {
     }
 
     public static long getHoursInMillis(int hour) {
-        return hour * 60 * getMinutesInMillis(60);
+        return hour * getMinutesInMillis(60);
     }
 
     public static long getDayInMillis(int days) {
