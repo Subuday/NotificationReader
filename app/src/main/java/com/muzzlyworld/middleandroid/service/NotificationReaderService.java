@@ -92,7 +92,7 @@ public final class NotificationReaderService extends NotificationListenerService
     }
 
     private boolean shouldHandleNotification(StatusBarNotification sbn) {
-        return mIsActive && sbn.getTag() != null;
+        return mIsActive;
     }
 
     private String getAppNameFromPackage(String pkg) {
